@@ -1,0 +1,89 @@
+.forms{
+  $x:42px;
+  &__card{
+    .contact__boxForm &{
+      box-shadow: none;
+    }
+    div:not(.contact__boxForm)> &{
+      border: 1px solid rgba(0, 0, 0, 0.20);
+      box-shadow: 0px 1px 10px 7px rgba(0, 0, 0, 0.14);
+    }
+  }
+  &__wrapper{
+
+  }
+  &__input{
+    padding: 14px 10px 3px;
+    min-height: #{$x};
+    border-color: #E2E2E2;
+  }
+  &__btn{
+    &:before{
+      content: "";
+      display: block;
+      background-color: var(--shop-color-button);
+      position: absolute;
+      left: -2px;
+      top: 0;
+      right: -2px;
+      bottom: 0;
+      z-index: -1;
+      transform: scale(1, 1);
+      -webkit-transform-origin: left center;
+      transform-origin: left center;
+      -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    &:hover,&:focus{
+      border-color: var(--shop-color-hover);
+      &:before{
+        transform-origin: right center;
+        transform: scale(0, 1);
+      }
+    }
+    border: none;
+    line-height: #{$x};
+    background-color: var(--shop-color-hover) !important;
+    @include font-size(14px);
+    font-weight: 700;
+    font-family: $font-primary;
+    letter-spacing: 0.56px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+  &__label{
+    sup{
+      color: #FE4E4E;
+    }
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+    @include font-size(13px);
+    color: #949494;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: #{$x};
+    transform-origin: left top;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    pointer-events: none;
+    .valid &,
+    .forms__input:focus ~ &{
+      transform: translateY(-5px) scale(0.8);
+    }
+  }
+  &__title{
+    @include font-size(60px);
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: #333;
+  }
+  &__txt{
+    letter-spacing: 0.6px;
+    color: #8D8D8D;
+    @include font-size(15px);
+    line-height: (26/15);
+  }
+}

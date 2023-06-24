@@ -1,0 +1,6 @@
+.main{
+  padding-bottom: 20px;
+  @include media-breakpoint-up('m'){
+    padding-bottom: 40px;
+  }
+}

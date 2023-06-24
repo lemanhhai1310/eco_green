@@ -1,0 +1,38 @@
+.footer{
+  &__address{
+    font-family: $font-OpenSans;
+    @include font-size(18px);
+    letter-spacing: 0.125px;
+    text-transform: uppercase;
+    line-height: (24.51/18);
+    div{
+      font-family: $font-secondary;
+      font-weight: 700;
+      @include font-size(25px);
+      color: #fff;
+      line-height: (32.63/25);
+    }
+  }
+  &__nav{
+    >li{
+      >a{
+        letter-spacing: 0.09px;
+        font-family: $font-primary;
+        @include font-size(18px);
+        padding: 2px 0;
+      }
+    }
+  }
+  &__top{
+    background: $primary-color;
+  }
+  &__bottom{
+    background: #000;
+    letter-spacing: 0.065px;
+    text-transform: uppercase;
+    @include font-size(13px);
+    font-family: $font-OpenSans;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

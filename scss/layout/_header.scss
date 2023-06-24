@@ -1,0 +1,28 @@
+.header{
+  &:not(.uk-navbar-transparent){
+    background: $primary-color;
+  }
+  &__navItem{
+    min-height: 91px;
+  }
+  .uk-navbar-item{
+    @extend .header__navItem;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .header__navItem;
+      }
+    }
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        font-size: 15px;
+        font-family: $font-secondary;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.contact{
+  &__bg{
+    @include media-breakpoint-up('m'){
+      min-height: 550px;
+    }
+  }
+  &__boxForm{
+    margin-top: -120px;
+    @include media-breakpoint-up('m'){
+      margin-top: -350px;
+    }
+  }
+  &__txt1{
+    color: #232323;
+    @include font-size(18px);
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+    font-family: $font-Lato;
+    font-weight: 900;
+    @include media-breakpoint-up('m'){
+      margin-bottom: 20px;
+    }
+  }
+  &__txt2{
+    letter-spacing: 0.7px;
+    color: #4D4F55;
+    @include font-size(18px);
+    font-weight: 700;
+  }
+}

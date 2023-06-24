@@ -1,18 +1,12 @@
 // Color
-$primary-color: #E68500;
+$primary-color: #132E1D;
 $secondary-color: #666AEE;
 
 // Fonts families
-//$font-primary: 'Arial Regular',sans-serif;
-//$font-Roboto: 'Roboto Regular',sans-serif;
-//$font-Roboto-Bold: 'Roboto Bold',sans-serif;
-//$font-Roboto-Medium: 'Roboto Medium',sans-serif;
-//$font-Roboto-LightItalic: 'Roboto Light Italic',sans-serif;
-//$font-Roboto-Black: 'Roboto Black',sans-serif;
-//$font-Roboto-BoldItalic: 'Roboto Bold Italic',sans-serif;
-//$font-Verdana: 'Verdana Regular',sans-serif;
-//$font-Verdana-Bold: 'Verdana Bold',sans-serif;
-//$font-secondary: 'Playfair Display',sans-serif;
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'EB Garamond', sans-serif;
+$font-OpenSans: 'Open Sans', sans-serif;
+$font-Lato: 'Lato', sans-serif;
 
 // Font-size base
 $base-font: 14px !default;
@@ -29,3 +23,36 @@ $grid-breakpoints: (
   l: 1200px,
   xl: 1600px
 ) !default;
+
+:root {
+  --shop-color-bg: #f5f5f5;
+  --shop-color-main: #7f2b25;
+  --shop-color-text: #313131;
+  --shop-color-title: #313131;
+  --shop-color-hover: #132E1D;
+  --shop-color-button: #098500;
+  --shop-color-border: #d9d9d9;
+  --home-category-bg-1: #faf1ff;
+  --home-category-bg-2: #faf4eb;
+  --home-category-bg-3: #f4e6e5;
+  --home-category-bg-4: #e6f2f4;
+  --home-category-bg-5: #fff6f6;
+  --home-coupon-bg: #ffffff;
+  --home-coupon-light: #ffffff;
+  --home-coupon-border: #f8d0d3;
+  --home-coupon-text: #333333;
+  --home-collection1-bg: #7f2b25;
+  --home-collection1-icon: #ffe501;
+  --home-collection1-color-text: #ffffff;
+  --home-categorize-bg: #dee4e9;
+  --home-categorize-color: #333333;
+  --home-collection2-bg: #adc4d2;
+  --home-collection2-title: #ff0000;
+  --home-collection3-bg: #e9dabe;
+  --footer-bg-color-1: #2a2a2a;
+  --footer-bg-color-2: #2a2a2a;
+  --footer-bg-color-copyright: #222222;
+  --footer-color-title: #ffffff;
+  --footer-color-text: #aaaaaa;
+  --footer-color-hover: #c73328;
+}

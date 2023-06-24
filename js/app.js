@@ -13,7 +13,7 @@ const xx = document.querySelectorAll.bind(document);
 
 const app = {
     render: function () {
-        
+
     },
     start: function () {
         this.render();
@@ -23,4 +23,96 @@ const app = {
 window.addEventListener("load", ()=>{
     console.log("page is fully loaded");
     app.start();
+
+    const usernameEl = document.querySelector('#username');
+    const emailEl = document.querySelector('#email');
+    const phoneEl = document.querySelector('#phone');
+    const textareaEl = document.querySelector('#textarea');
+    const form = document.querySelector('#submitForm');
+    const isRequired = value => value === '' ? false : true;
+
+    const checkValid = () => {
+        const username = usernameEl.value.trim();
+        const email = emailEl.value.trim();
+        const phone = phoneEl.value.trim();
+        const textarea = textareaEl.value.trim();
+        if (!isRequired(username)){
+            showError(usernameEl);
+        }else {
+            showSuccess(usernameEl);
+        }
+
+        if (!isRequired(email)){
+            showError(emailEl);
+        }else {
+            showSuccess(emailEl);
+        }
+
+        if (!isRequired(phone)){
+            showError(phoneEl);
+        }else {
+            showSuccess(phoneEl);
+        }
+
+        if (!isRequired(textarea)){
+            showError(textareaEl);
+        }else {
+            showSuccess(textareaEl);
+        }
+    }
+
+    const showError = (input, message) => {
+        // get the form-field element
+        const formField = input.parentElement;
+
+        // add the error class
+        formField.classList.remove('valid');
+    };
+
+    const showSuccess = (input, message) => {
+        // get the form-field element
+        const formField = input.parentElement;
+
+        // remove the error class
+        formField.classList.add('valid');
+    }
+
+    const debounce = (fn, delay = 500) => {
+        let timeoutId;
+        return (...args) => {
+            // cancel the previous timer
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+            // setup a new timer
+            timeoutId = setTimeout(() => {
+                fn.apply(null, args)
+            }, delay);
+        };
+    };
+
+    form.addEventListener('input', debounce(function (e) {
+        switch (e.target.id) {
+            case 'username':
+                checkValid();
+                break;
+            case 'email':
+                checkValid();
+                break;
+            case 'phone':
+                checkValid();
+                break;
+            case 'textarea':
+                checkValid();
+                break;
+        }
+    }));
 })
+
+
+
+
+
+
+
+
