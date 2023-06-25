@@ -37,7 +37,7 @@
                             <ul class="footer__nav uk-nav uk-nav-default">
                                 <li><a href="#">Mua Bán</a></li>
                                 <li><a href="#">Cho Thuê</a></li>
-                                <li><a href="#">Tin Tức</a></li>
+                                <li><a href="tintuc1.php">Tin Tức</a></li>
                             </ul>
                         </div>
                     </div>

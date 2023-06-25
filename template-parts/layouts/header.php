@@ -44,7 +44,7 @@
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li><a href="#">MUA BÁN </a></li>
                         <li><a href="#">CHO THUÊ</a></li>
-                        <li><a href="#">TIN TỨC</a></li>
+                        <li><a href="tintuc1.php">TIN TỨC</a></li>
                         <li><a href="contact.php">LIÊN HỆ</a></li>
                     </ul>
                 </div>

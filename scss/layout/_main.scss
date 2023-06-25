@@ -3,4 +3,11 @@
   @include media-breakpoint-up('m'){
     padding-bottom: 40px;
   }
+  &__title{
+    font-weight: 800;
+    @include font-size(48px);
+    color: var(--text-title-text, #333);
+    font-family: $font-primary;
+    margin: 0;
+  }
 }
