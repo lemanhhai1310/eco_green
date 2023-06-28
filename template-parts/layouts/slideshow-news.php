@@ -15,7 +15,7 @@
         );
         foreach ($data as $k=>$v): ?>
             <li>
-                <img src="<?= $v['img'] ?>" alt="" uk-cover>
+                <img data-src="https://picsum.photos/1440/860/?random=<?= $k ?>" uk-img="loading: <?= ($k==0)?'eager':'lazy' ?>" alt="" uk-cover>
                 <div class="tintuc1__slideshow__overlay uk-position-cover uk-flex uk-flex-bottom">
                     <div class="uk-width uk-section-large">
                         <div class="uk-container">

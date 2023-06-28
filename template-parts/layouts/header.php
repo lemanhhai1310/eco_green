@@ -11,13 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Lato:wght@900&family=Mulish:wght@400;500;600;700;800&family=Open+Sans&display=swap" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="style.css?v=<?php echo(time()) ?>">
 
     <!--JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
@@ -39,7 +36,7 @@
                         <li><a href="#">MẶT BẰNG TỔNG THỂ</a></li>
                     </ul>
                 </div>
-                <a class="uk-navbar-item uk-logo" style="min-width: 174px" href="."><img class="uk-position-top-center" src="images/logo-home1.png" alt=""></a>
+                <a class="uk-navbar-item uk-logo" style="min-width: 174px" href="."><img class="uk-position-top-center" uk-img="loading: eager" data-src="images/logo-home1.png" alt=""></a>
                 <div class="uk-navbar-center-right">
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li><a href="#">MUA BÁN </a></li>
@@ -57,4 +54,4 @@
 <!--/header-->
 
 <!--main-->
-<main class="main">
+<main class="main" uk-height-viewport="offset-top: true; offset-bottom: true;">

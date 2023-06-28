@@ -803,76 +803,31 @@ body {
   margin-top: 50px;
 }
 
-.fz-14 {
-  font-size: 14px !important;
+.pagination > *:nth-child(n+2) {
+  margin-left: 7px;
 }
-@media screen and (min-width: 640px) {
-  .fz-14 {
-    font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
-  }
+.pagination > *:first-child > *, .pagination > *:last-child > * {
+  color: #008D47;
 }
-@media screen and (min-width: 1200px) {
-  .fz-14 {
-    font-size: 14px !important;
-  }
+.pagination > * > * {
+  color: #2D2D2D;
+  font-family: "EB Garamond", sans-serif;
+  width: 34px;
+  height: 34px;
+  border-radius: 5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
 }
-
-.fz-15 {
-  font-size: 15px !important;
+.pagination > * > :hover {
+  color: #008D47;
 }
-@media screen and (min-width: 640px) {
-  .fz-15 {
-    font-size: calc(15px + 0 * ((100vw - 640px) / 560)) !important;
-  }
+.pagination > *.uk-active > * {
+  background: #008D47;
+  color: #fff;
 }
-@media screen and (min-width: 1200px) {
-  .fz-15 {
-    font-size: 15px !important;
-  }
-}
-
-.fz-16 {
-  font-size: 16px !important;
-}
-@media screen and (min-width: 640px) {
-  .fz-16 {
-    font-size: calc(16px + 0 * ((100vw - 640px) / 560)) !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .fz-16 {
-    font-size: 16px !important;
-  }
-}
-
-.fz-20 {
-  font-size: 16px !important;
-}
-@media screen and (min-width: 640px) {
-  .fz-20 {
-    font-size: calc(16px + 4 * ((100vw - 640px) / 560)) !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .fz-20 {
-    font-size: 20px !important;
-  }
-}
-
-.fz-30 {
-  font-size: 21px !important;
-}
-@media screen and (min-width: 640px) {
-  .fz-30 {
-    font-size: calc(21px + 9 * ((100vw - 640px) / 560)) !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .fz-30 {
-    font-size: 30px !important;
-  }
-}
-
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -953,14 +908,6 @@ body {
   color: #fff;
 }
 
-.main {
-  padding-bottom: 20px;
-}
-@media (min-width: 960px) {
-  .main {
-    padding-bottom: 40px;
-  }
-}
 .main__title {
   font-weight: 800;
   font-size: calc(1.425rem + 2.1vw);
@@ -1017,12 +964,14 @@ body {
 }
 div:not(.contact__boxForm) > .forms__card {
   border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.75);
   box-shadow: 0px 1px 10px 7px rgba(0, 0, 0, 0.14);
 }
 .forms__input {
   padding: 14px 10px 3px;
   min-height: 42px;
-  border-color: #E2E2E2;
+  border-color: #000;
+  background-color: transparent;
 }
 .forms__btn {
   border: none;
@@ -1065,7 +1014,7 @@ div:not(.contact__boxForm) > .forms__card {
   letter-spacing: 0.52px;
   text-transform: uppercase;
   font-size: 0.8125rem;
-  color: #949494;
+  color: #000 !important;
   position: absolute;
   left: 10px;
   top: 0;
@@ -1081,10 +1030,11 @@ div:not(.contact__boxForm) > .forms__card {
   transform: translateY(-5px) scale(0.8);
 }
 .forms__title {
-  font-size: calc(1.5rem + 3vw);
   font-family: "EB Garamond", sans-serif;
   font-weight: 700;
-  color: #333;
+  color: #098500;
+  text-align: center;
+  font-size: calc(1.5rem + 3vw);
 }
 @media (min-width: 1200px) {
   .forms__title {
@@ -1093,9 +1043,22 @@ div:not(.contact__boxForm) > .forms__card {
 }
 .forms__txt {
   letter-spacing: 0.6px;
-  color: #8D8D8D;
-  font-size: 0.9375rem;
-  line-height: 1.7333333333;
+  color: #000;
+  line-height: 1.3;
+  font-size: 1.25rem;
+}
+
+.blockForm {
+  position: relative;
+}
+.blockForm:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 56.3%, rgba(0, 0, 0, 0.4) 93.23%);
 }
 
 @media (min-width: 960px) {
@@ -1290,6 +1253,7 @@ div:not(.contact__boxForm) > .forms__card {
   font-weight: 700;
   color: var(--text-title-text, #333);
   font-size: 15px;
+  margin-bottom: 5px;
 }
 .tintuc1__sidebar__title1 a {
   color: var(--text-title-text, #333);
@@ -1333,6 +1297,15 @@ div:not(.contact__boxForm) > .forms__card {
 .tintuc1__card__link a {
   color: #098500;
   font-size: 16px;
+}
+.tintuc1__card__label {
+  letter-spacing: 1.6px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-white, #FFF);
+  font-family: "Mulish", sans-serif;
+  border-radius: 4px;
+  background-color: #098500;
 }
 .tintuc1__card__boximg1, .tintuc1__card__boximg2 {
   border-radius: 8px;

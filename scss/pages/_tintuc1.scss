@@ -170,6 +170,7 @@
       font-weight: 700;
       color: var(--text-title-text, #333);
       font-size: 15px;
+      margin-bottom: 5px;
       a{
         color: var(--text-title-text, #333);
         text-decoration: none;
@@ -212,6 +213,15 @@
         color: #098500;
         font-size: 16px;
       }
+    }
+    &__label{
+      letter-spacing: 1.6px;
+      @include font-size(16px);
+      font-weight: 800;
+      color: var(--text-white, #FFF);
+      font-family: $font-Mulish;
+      border-radius: 4px;
+      background-color: #098500;
     }
     &__boximg1{
       border-radius: 8px;

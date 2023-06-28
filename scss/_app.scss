@@ -13,6 +13,7 @@
 @import 'base/helpers';
 @import 'base/uikits';
 
+@import "components/rfs";
 @import 'components/grid';
 @import 'components/margin';
 @import 'components/buttons';
@@ -27,7 +28,6 @@
 @import 'components/text';
 @import 'components/keyframes';
 @import "components/items";
-@import "components/rfs";
 
 @import 'layout/navigation';
 @import 'layout/grid';
@@ -36,6 +36,7 @@
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
+@import 'layout/blockForm';
 
 @import 'pages/home';
 @import 'pages/about';

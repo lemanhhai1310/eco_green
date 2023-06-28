@@ -6,7 +6,7 @@
 
                 <ul class="uk-navbar-nav">
                     <li class="<?= (isset($tintuc1)) ? 'uk-active' : '' ?>"><a href="tintuc1.php">Tin tức mới nhất</a></li>
-                    <li class=""><a href="">Tất cả các tin</a></li>
+                    <li class="<?= (isset($tintuc2)) ? 'uk-active' : '' ?>"><a href="tintuc2.php">Tất cả các tin</a></li>
                 </ul>
 
             </div>

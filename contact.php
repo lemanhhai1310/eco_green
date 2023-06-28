@@ -1,12 +1,7 @@
 <?php $data["title"] = "Liên hệ"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="contact__bg uk-height-min-medium uk-background-norepeat uk-background-center-center uk-background-cover" uk-parallax="bgy: -20" data-src="images/tong-quan-eco-green-saigon1.png" uk-img></div>
-<div class="uk-container">
-    <div class="contact__boxForm">
-        <?php require "template-parts/layouts/form.php"; ?>
-    </div>
-</div>
+<?php require "template-parts/layouts/blockForm.php"; ?>
 <div class="uk-section uk-background-muted">
     <div class="uk-container">
         <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
