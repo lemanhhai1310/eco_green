@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Lato:wght@900&family=Mulish:wght@400;500;600;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Lato:wght@900&family=Mulish:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="style.css?v=<?php echo(time()) ?>">
@@ -31,8 +31,8 @@
 
                 <div class="uk-navbar-center-left">
                     <ul class="uk-navbar-nav uk-visible@m">
-                        <li><a href="#">GIỚI THIỆU DỰ ÁN</a></li>
-                        <li><a href="#">TIỆN ÍCH</a></li>
+                        <li class="<?= (isset($about)) ? 'uk-active' : '' ?>"><a href="about.php">GIỚI THIỆU DỰ ÁN</a></li>
+                        <li class="<?= (isset($tienich)) ? 'uk-active' : '' ?>"><a href="tienich.php">TIỆN ÍCH</a></li>
                         <li><a href="#">MẶT BẰNG TỔNG THỂ</a></li>
                     </ul>
                 </div>
@@ -41,9 +41,16 @@
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li><a href="#">MUA BÁN </a></li>
                         <li><a href="#">CHO THUÊ</a></li>
-                        <li><a href="tintuc1.php">TIN TỨC</a></li>
-                        <li><a href="contact.php">LIÊN HỆ</a></li>
+                        <li class="<?= (isset($tintuc)) ? 'uk-active' : '' ?>"><a href="tintuc1.php">TIN TỨC</a></li>
+                        <li class="<?= (isset($contact)) ? 'uk-active' : '' ?>"><a href="contact.php">LIÊN HỆ</a></li>
                     </ul>
+                    <div class="uk-navbar-item">
+                        <div class="header__lang">
+                            <a href="" class="uk-active">VN</a>
+                            <a href="">EN</a>
+                            <a href="">CH</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>

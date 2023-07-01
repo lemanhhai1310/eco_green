@@ -1,6 +1,7 @@
 <?php $data["title"] = "Tin tức 2"; ?>
 <?php $bodyClass = '' ?>
 <?php $tintuc2 = '' ?>
+<?php $tintuc = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <?php require "template-parts/layouts/slideshow-news.php"; ?>
 <?php require "template-parts/layouts/navbar-news.php"; ?>

@@ -1,5 +1,6 @@
 <?php $data["title"] = "Liên hệ"; ?>
 <?php $bodyClass = '' ?>
+<?php $contact = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <?php require "template-parts/layouts/blockForm.php"; ?>
 <div class="uk-section uk-background-muted">

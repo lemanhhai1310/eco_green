@@ -28,7 +28,7 @@
                         <div>
                             <ul class="footer__nav uk-nav uk-nav-default">
                                 <li><a href="#">Giới thiệu dự án</a></li>
-                                <li><a href="#">Tiện ích</a></li>
+                                <li><a href="tienich.php">Tiện ích</a></li>
                                 <li><a href="#">Mặt bằng tổng thể</a></li>
                                 <li><a href="contact.php">Liên hệ</a></li>
                             </ul>
