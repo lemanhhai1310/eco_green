@@ -1,0 +1,64 @@
+.about{
+  &__section1{
+    @include media-breakpoint-up('m'){
+      min-height: 655px;
+    }
+    &__title1{
+      @include font-size(85px);
+      font-weight: 700;
+      font-family: $font-EBGaramond;
+      line-height: (70/85);
+    }
+    &__title2{
+      font-weight: 600;
+      font-family: $font-EBGaramond;
+      letter-spacing: 0.84px;
+      @include font-size(42px);
+    }
+    &__desc{
+      @include font-size(16px);
+      letter-spacing: 0.32px;
+      font-family: $font-TitilliumWeb;
+    }
+  }
+  &__txt1{
+    color: #132E1D;
+    text-align: justify;
+    font-family: $font-Mulish;
+    @include font-size(22px);
+    line-height: (28/22);
+  }
+  &__txt2{
+    color: #000;
+    font-family: $font-OpenSans;
+    @include font-size(26px);
+    letter-spacing: 1.04px;
+    opacity: 0.6000000238418579;
+    line-height: (34/26);
+  }
+  &__video{
+    border-radius: 42px;
+    background: #132E1D;
+    &__btn{
+      &:before,&:after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 168px;
+        height: 168px;
+        display: flex;
+      }
+      &:before{
+        background: rgba(217, 217, 217, 0.50);
+        border-radius: 50%;
+      }
+      &:after{
+        background-image: url("data:image/svg+xml,%3Csvg width='77' height='94' viewBox='0 0 77 94' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.28516 0.904024C4.79688 0.086002 6.63861 0.151387 8.08741 1.07451L74.0041 43.0745C75.3517 43.9332 76.1664 45.4121 76.1664 47C76.1664 48.5879 75.3517 50.0668 74.0041 50.9255L8.08741 92.9255C6.63861 93.8486 4.79688 93.914 3.28516 93.096C1.77344 92.278 0.833008 90.7071 0.833008 89V5.00001C0.833008 3.29291 1.77344 1.72205 3.28516 0.904024ZM10.2497 13.5478V80.4522L62.7511 47L10.2497 13.5478Z' fill='white'/%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+}

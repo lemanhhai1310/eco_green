@@ -9,42 +9,48 @@
 
             <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 
-                <ul class="uk-slider-items uk-child-width-1-1 uk-grid-match" uk-grid="">
+                <ul class="uk-slider-items uk-child-width-1-1 uk-grid-match" uk-grid="" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
                     <li>
                         <div class="uk-child-width-1-3@m uk-grid-30 uk-flex-bottom" uk-grid>
                             <div>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/sgs-campus-day1.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
-                                    <label class="uk-label uk-label-success uk-position-bottom-right tienich__ngoaikhu__label">Giáo Dục</label>
-                                </div>
-                                <h3 class="tienich__ngoaikhu__title">Cơ sở giáo dục</h3>
-                                <p class="tienich__ngoaikhu__desc">Các cơ sở giáo dục xung quanh Eco Green Sài Gòn</p>
-                            </div>
-                            <div>
-                                <ul class="tienich__ngoaikhu__list">
-                                    <li>Trường cấp 1-2-3 quốc tế Việt Mỹ,</li>
-                                    <li>Trường  Đại học Tài Chính Marketing</li>
-                                    <li>Trường ĐH RMIT</li>
-                                    <li>Trường ĐH Tôn Đức Thắng</li>
-                                    <li>Trường quốc tế International School</li>
-                                </ul>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/061.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
+                                <div class="uk-card" uk-scrollspy-class="uk-animation-slide-top">
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/sgs-campus-day1.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                        <label class="uk-label uk-label-success uk-position-bottom-right tienich__ngoaikhu__label">Giáo Dục</label>
+                                    </div>
+                                    <h3 class="tienich__ngoaikhu__title">Cơ sở giáo dục</h3>
+                                    <p class="tienich__ngoaikhu__desc">Các cơ sở giáo dục xung quanh Eco Green Sài Gòn</p>
                                 </div>
                             </div>
                             <div>
-                                <ul class="tienich__ngoaikhu__list">
-                                    <li>Trường mầm non PLAYSCHOOL</li>
-                                    <li>Trường mầm non Tuệ Đức (Pathway)</li>
-                                    <li>Trường tiểu học Kim Đồng</li>
-                                    <li>Trường THCS Nguyễn Thị Thập</li>
-                                    <li>Trường THPT Ngô Quyền</li>
-                                </ul>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/international-school-campus-61.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
+                                <div class="uk-card">
+                                    <ul class="tienich__ngoaikhu__list">
+                                        <li>Trường cấp 1-2-3 quốc tế Việt Mỹ,</li>
+                                        <li>Trường  Đại học Tài Chính Marketing</li>
+                                        <li>Trường ĐH RMIT</li>
+                                        <li>Trường ĐH Tôn Đức Thắng</li>
+                                        <li>Trường quốc tế International School</li>
+                                    </ul>
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/061.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card">
+                                    <ul class="tienich__ngoaikhu__list">
+                                        <li>Trường mầm non PLAYSCHOOL</li>
+                                        <li>Trường mầm non Tuệ Đức (Pathway)</li>
+                                        <li>Trường tiểu học Kim Đồng</li>
+                                        <li>Trường THCS Nguyễn Thị Thập</li>
+                                        <li>Trường THPT Ngô Quyền</li>
+                                    </ul>
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/international-school-campus-61.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -52,38 +58,44 @@
                     <li>
                         <div class="uk-child-width-1-3@m uk-grid-30 uk-flex-bottom" uk-grid>
                             <div>
-                                <h4 class="tienich__ngoaikhu__name">Trung tâm thương mại:</h4>
-                                <ul class="tienich__ngoaikhu__list">
-                                    <li>Vivo city</li>
-                                    <li>Lotte Mart</li>
-                                    <li>Cresent Mall</li>
-                                    <li>Big C</li>
-                                </ul>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/12-IMG_23641.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
+                                <div class="uk-card">
+                                    <h4 class="tienich__ngoaikhu__name">Trung tâm thương mại:</h4>
+                                    <ul class="tienich__ngoaikhu__list">
+                                        <li>Vivo city</li>
+                                        <li>Lotte Mart</li>
+                                        <li>Cresent Mall</li>
+                                        <li>Big C</li>
+                                    </ul>
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/12-IMG_23641.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                    </div>
                                 </div>
                             </div>
                             <div>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/5f82a44d5dc58c13ba6c7c92_phu_my_hung_tower_5jvTBDEZ3_image1.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
-                                    <label class="uk-label uk-label-success uk-position-bottom-right tienich__ngoaikhu__label">Giải Trí</label>
+                                <div class="uk-card" uk-scrollspy-class="uk-animation-slide-top">
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/5f82a44d5dc58c13ba6c7c92_phu_my_hung_tower_5jvTBDEZ3_image1.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                        <label class="uk-label uk-label-success uk-position-bottom-right tienich__ngoaikhu__label">Giải Trí</label>
+                                    </div>
+                                    <h3 class="tienich__ngoaikhu__title">VUI CHƠI GIẢI TRÍ</h3>
+                                    <p class="tienich__ngoaikhu__desc">Các cơ sở vui chơi giải trí xung quanh Eco Green Sài Gòn</p>
                                 </div>
-                                <h3 class="tienich__ngoaikhu__title">VUI CHƠI GIẢI TRÍ</h3>
-                                <p class="tienich__ngoaikhu__desc">Các cơ sở vui chơi giải trí xung quanh Eco Green Sài Gòn</p>
                             </div>
                             <div>
-                                <h4 class="tienich__ngoaikhu__name">Khu vui chơi giải trí:</h4>
-                                <ul class="tienich__ngoaikhu__list">
-                                    <li>Jump Arena</li>
-                                    <li>Vietopia</li>
-                                    <li>Saigon Hello Park</li>
-                                    <li>Artinus 3D Gallery</li>
-                                </ul>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/gia-ve-jump-arena-11.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
+                                <div class="uk-card">
+                                    <h4 class="tienich__ngoaikhu__name">Khu vui chơi giải trí:</h4>
+                                    <ul class="tienich__ngoaikhu__list">
+                                        <li>Jump Arena</li>
+                                        <li>Vietopia</li>
+                                        <li>Saigon Hello Park</li>
+                                        <li>Artinus 3D Gallery</li>
+                                    </ul>
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/gia-ve-jump-arena-11.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -91,37 +103,43 @@
                     <li>
                         <div class="uk-child-width-1-3@m uk-grid-30 uk-flex-bottom" uk-grid>
                             <div>
-                                <ul class="tienich__ngoaikhu__list">
-                                    <li>Bệnh viện Quận 7</li>
-                                    <li>Bệnh Viện Đa Khoa Việt Pháp FV</li>
-                                    <li>Bệnh Viện TIM Tâm Đức</li>
-                                    <li>Bệnh viện Đa Khoa Quận 7</li>
-                                </ul>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/sgs-campus-day1.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
+                                <div class="uk-card">
+                                    <ul class="tienich__ngoaikhu__list">
+                                        <li>Bệnh viện Quận 7</li>
+                                        <li>Bệnh Viện Đa Khoa Việt Pháp FV</li>
+                                        <li>Bệnh Viện TIM Tâm Đức</li>
+                                        <li>Bệnh viện Đa Khoa Quận 7</li>
+                                    </ul>
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/sgs-campus-day1.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                    </div>
                                 </div>
                             </div>
                             <div>
-                                <ul class="tienich__ngoaikhu__list">
-                                    <li>Bệnh viện Franco Việt Nam</li>
-                                    <li>Bệnh viện Pháp - Việt</li>
-                                    <li>Nha khoa Quốc tế Kay Dentist</li>
-                                    <li>Nha khoa Quốc tế Quận 7</li>
-                                </ul>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/5f82a44d5dc58c13ba6c7c92_phu_my_hung_tower_5jvTBDEZ3_image1.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
+                                <div class="uk-card">
+                                    <ul class="tienich__ngoaikhu__list">
+                                        <li>Bệnh viện Franco Việt Nam</li>
+                                        <li>Bệnh viện Pháp - Việt</li>
+                                        <li>Nha khoa Quốc tế Kay Dentist</li>
+                                        <li>Nha khoa Quốc tế Quận 7</li>
+                                    </ul>
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/5f82a44d5dc58c13ba6c7c92_phu_my_hung_tower_5jvTBDEZ3_image1.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                    </div>
                                 </div>
                             </div>
                             <div>
-                                <div class="tienich__ngoaikhu__coverImg uk-cover-container">
-                                    <img src="images/BV-PK-Phap-Viet-32.png" alt="" uk-cover="">
-                                    <canvas width="402" height="478"></canvas>
-                                    <label class="uk-label uk-label-success uk-position-bottom-right tienich__ngoaikhu__label">Y Tế</label>
+                                <div class="uk-card" uk-scrollspy-class="uk-animation-slide-top">
+                                    <div class="tienich__ngoaikhu__coverImg uk-cover-container">
+                                        <img src="images/BV-PK-Phap-Viet-32.png" alt="" uk-cover="">
+                                        <canvas width="402" height="478"></canvas>
+                                        <label class="uk-label uk-label-success uk-position-bottom-right tienich__ngoaikhu__label">Y Tế</label>
+                                    </div>
+                                    <h3 class="tienich__ngoaikhu__title">CƠ SỞ Y TẾ</h3>
+                                    <p class="tienich__ngoaikhu__desc">Các cơ sở y tế xung quanh Eco Green Sài Gòn</p>
                                 </div>
-                                <h3 class="tienich__ngoaikhu__title">CƠ SỞ Y TẾ</h3>
-                                <p class="tienich__ngoaikhu__desc">Các cơ sở y tế xung quanh Eco Green Sài Gòn</p>
                             </div>
                         </div>
                     </li>

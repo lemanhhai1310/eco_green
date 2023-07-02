@@ -1104,6 +1104,87 @@ div:not(.contact__boxForm) > .forms__card {
 }
 
 @media (min-width: 960px) {
+  .about__section1 {
+    min-height: 655px;
+  }
+}
+.about__section1__title1 {
+  font-size: calc(1.65625rem + 4.875vw);
+  font-weight: 700;
+  font-family: "EB Garamond", sans-serif;
+  line-height: 0.8235294118;
+}
+@media (min-width: 1200px) {
+  .about__section1__title1 {
+    font-size: 5.3125rem;
+  }
+}
+.about__section1__title2 {
+  font-weight: 600;
+  font-family: "EB Garamond", sans-serif;
+  letter-spacing: 0.84px;
+  font-size: calc(1.3875rem + 1.65vw);
+}
+@media (min-width: 1200px) {
+  .about__section1__title2 {
+    font-size: 2.625rem;
+  }
+}
+.about__section1__desc {
+  font-size: 1rem;
+  letter-spacing: 0.32px;
+  font-family: "Titillium Web", sans-serif;
+}
+.about__txt1 {
+  color: #132E1D;
+  text-align: justify;
+  font-family: "Mulish", sans-serif;
+  font-size: calc(1.2625rem + 0.15vw);
+  line-height: 1.2727272727;
+}
+@media (min-width: 1200px) {
+  .about__txt1 {
+    font-size: 1.375rem;
+  }
+}
+.about__txt2 {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(1.2875rem + 0.45vw);
+  letter-spacing: 1.04px;
+  opacity: 0.6000000238;
+  line-height: 1.3076923077;
+}
+@media (min-width: 1200px) {
+  .about__txt2 {
+    font-size: 1.625rem;
+  }
+}
+.about__video {
+  border-radius: 42px;
+  background: #132E1D;
+}
+.about__video__btn:before, .about__video__btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 168px;
+  height: 168px;
+  display: flex;
+}
+.about__video__btn:before {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 50%;
+}
+.about__video__btn:after {
+  background-image: url("data:image/svg+xml,%3Csvg width='77' height='94' viewBox='0 0 77 94' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.28516 0.904024C4.79688 0.086002 6.63861 0.151387 8.08741 1.07451L74.0041 43.0745C75.3517 43.9332 76.1664 45.4121 76.1664 47C76.1664 48.5879 75.3517 50.0668 74.0041 50.9255L8.08741 92.9255C6.63861 93.8486 4.79688 93.914 3.28516 93.096C1.77344 92.278 0.833008 90.7071 0.833008 89V5.00001C0.833008 3.29291 1.77344 1.72205 3.28516 0.904024ZM10.2497 13.5478V80.4522L62.7511 47L10.2497 13.5478Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+@media (min-width: 960px) {
   .contact__bg {
     min-height: 550px;
   }
